@@ -1,0 +1,8 @@
+.DS_Store
+#.*
+
+nbproject/
+test-coverage/
+vendor/
+
+config/local
