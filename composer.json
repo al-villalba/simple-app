@@ -2,5 +2,15 @@
     "require": {
         "jelix/fakeserverconf": "^1.0",
         "phpmailer/phpmailer": "^6.1"
+    },
+	"autoload": {
+		"psr-4": {
+			"App\\Command\\": "mvc/commands/",
+			"App\\Controller\\": "mvc/controllers/",
+			"App\\": "mvc/src/",
+			"Simple\\Command\\": "vendor/simple/mvc/commands/",
+			"Simple\\Controller\\": "vendor/simple/mvc/controllers/",
+			"Simple\\": "vendor/simple/mvc/src/"
+		}
     }
 }

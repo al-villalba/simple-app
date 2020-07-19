@@ -1,0 +1,45 @@
+{
+	"GET" : {
+		"/{namespace}/{controller}/{action}/*" : {
+		},
+
+		"/{namespace}/{controller}/{action}" : {
+		},
+
+		"/page/{action}/*" : {
+			"namespace"  : "App",
+			"controller" : "Page",
+			"query"     : {
+				"p1" : "v1",
+				"p2" : "v2"
+			}
+		},
+		"/{controller}/{action}/*" : {
+			"namespace" : "App",
+		},
+		"/page/(read|read-all)" : {
+			"namespace"  : "App",
+			"controller" : "Page",
+			"action"     : $0
+		},
+		"/{controller}/{action}" : {
+			"namespace" : "App",
+		},
+
+		"/{controller}" : {
+			"namespace" : "App",
+			"action"    : "index"
+		},
+
+		"/" : {
+			"namespace"  : "App",
+			"controller" : "Homepage",
+			"action"     : "index"
+		}
+	},
+
+	"POST" : {
+		"/{controller}/{action}" : {
+		}
+	}
+}

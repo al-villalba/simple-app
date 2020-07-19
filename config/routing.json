@@ -1,0 +1,36 @@
+{
+	"GET" : {
+
+		"/{namespace}/{controller}/{action}/*" : {
+		},
+		"/{namespace}/{controller}/{action}" : {
+		},
+
+		"/{controller}/{action}/*" : {
+			"namespace"  : "App"
+		},
+		"/{controller}/{action}" : {
+			"namespace"  : "App"
+		},
+
+		"/{controller}" : {
+			"namespace"  : "App",
+			"action"     : "index"
+		},
+
+		"/" : {
+			"namespace"  : "App",
+			"controller" : "Homepage",
+			"action"     : "index"
+		}
+	},
+
+	"POST" : {
+		"/{controller}/{action}" : {
+			"namespace"  : "App"
+		}
+	},
+
+	"DELETE" : {
+	}
+}
